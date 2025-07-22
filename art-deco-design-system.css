@@ -1025,8 +1025,36 @@ p[style*="font-size: 1.2rem"] {
   margin-bottom: 3rem !important;
 }
 
+/* Override inline grid styles cho 2fr 1fr grid (former layout) */
+[style*="display: grid"][style*="grid-template-columns: 2fr 1fr"] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+  align-items: center !important;
+  margin-bottom: 3rem !important;
+}
+
+/* Override inline grid styles cho 1fr 1fr grid (René Lalique và Pierre Chareau sections) */
+[style*="display: grid"][style*="grid-template-columns: 1fr 1fr"] {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+  align-items: center !important;
+  margin-bottom: 3rem !important;
+}
+
 @media (max-width: 768px) {
   [style*="display: grid"][style*="grid-template-columns: 1fr 2fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  [style*="display: grid"][style*="grid-template-columns: 2fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  [style*="display: grid"][style*="grid-template-columns: 1fr 1fr"] {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
@@ -1034,6 +1062,14 @@ p[style*="font-size: 1.2rem"] {
 
 @media (max-width: 480px) {
   [style*="display: grid"][style*="grid-template-columns: 1fr 2fr"] {
+    gap: 1.5rem !important;
+  }
+  
+  [style*="display: grid"][style*="grid-template-columns: 2fr 1fr"] {
+    gap: 1.5rem !important;
+  }
+  
+  [style*="display: grid"][style*="grid-template-columns: 1fr 1fr"] {
     gap: 1.5rem !important;
   }
 }
@@ -1064,8 +1100,34 @@ p[style*="font-size: 1.2rem"] {
   }
 }
 
+/* Interior Masterpieces 3-column grid fix */
+[style*="grid-template-columns: repeat(3, 1fr)"] {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  [style*="grid-template-columns: repeat(3, 1fr)"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  [style*="grid-template-columns: repeat(3, 1fr)"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+}
+
 /* Override inline image styles */
 .art-deco-card img[style*="height: 400px"] {
+  height: 400px !important;
+  object-fit: cover !important;
+}
+
+.art-deco-card img[style*="height: 500px"] {
   height: 400px !important;
   object-fit: cover !important;
 }
@@ -1074,10 +1136,18 @@ p[style*="font-size: 1.2rem"] {
   .art-deco-card img[style*="height: 400px"] {
     height: 250px !important;
   }
+  
+  .art-deco-card img[style*="height: 500px"] {
+    height: 250px !important;
+  }
 }
 
 @media (max-width: 480px) {
   .art-deco-card img[style*="height: 400px"] {
+    height: 200px !important;
+  }
+  
+  .art-deco-card img[style*="height: 500px"] {
     height: 200px !important;
   }
 }
@@ -3389,5 +3459,158 @@ p[style*="font-size: 1.2rem"] {
   
   .professional-palette-generator {
     padding: 2rem 1rem;
+  }
+}
+
+/* =========================== */
+/* COLOR PALETTE STUDIO MOBILE RESPONSIVE */
+/* Tối ưu hiển thị trên điện thoại */
+/* =========================== */
+
+/* Mobile-first cho Color Palette Studio */
+@media (max-width: 480px) {
+  /* Palette Categories Grid - hiển thị 2x2 grid thay vì 4 hàng */
+  .palette-categories-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  .palette-category {
+    padding: 1rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .category-info h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.3rem;
+  }
+  
+  .category-info p {
+    font-size: 0.8rem !important;
+    line-height: 1.3;
+  }
+  
+  .preview-colors {
+    height: 30px !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .preview-colors div {
+    height: 30px !important;
+  }
+  
+  /* Main Color Swatches - hiển thị 4 màu trên 1 hàng */
+  .main-color-swatches {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.8rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  .color-swatch-premium {
+    aspect-ratio: 1 !important;
+    min-height: 60px;
+  }
+  
+  .color-info-detailed {
+    font-size: 0.7rem !important;
+    padding: 0.3rem;
+  }
+  
+  .color-name-premium {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.2rem;
+  }
+  
+  .color-hex-premium {
+    font-size: 0.7rem !important;
+  }
+  
+  /* Usage Guide - compact layout */
+  .color-usage-guide {
+    padding: 1rem !important;
+  }
+  
+  .color-usage-guide h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  .usage-examples {
+    display: block !important;
+  }
+  
+  .usage-example {
+    margin-bottom: 1.5rem;
+  }
+  
+  .usage-demo {
+    height: 60px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .usage-tips {
+    margin-top: 1rem;
+  }
+  
+  .usage-tips h5 {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .usage-tips ul {
+    padding-left: 1rem;
+  }
+  
+  .usage-tips li {
+    font-size: 0.9rem !important;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Palette Actions - stack buttons */
+  .palette-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    width: 100%;
+  }
+  
+  .action-btn {
+    width: 100% !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Palette Header - mobile layout */
+  .palette-header {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .palette-header h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tablet responsive - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .palette-categories-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  .main-color-swatches {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1rem !important;
+  }
+  
+  .usage-examples {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
   }
 }

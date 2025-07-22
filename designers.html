@@ -444,7 +444,7 @@
             <!-- Ruhlmann's furniture -->
             <div class="art-deco-card" style="background: var(--gradient-gold); color: var(--primary-dark);">
                 <h3 style="color: var(--primary-burgundy); text-align: center; margin-bottom: 2rem; font-size: 2rem;">Interior Masterpieces</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                     <div class="clickable-card" data-modal="ruhlmann-table-modal" style="text-align: center; position: relative;">
                         <!-- Image: 350x400px - Ruhlmann Corner table -->
                         <img src="images/ruhlmann-corner-table.jpg" alt="Ruhlmann Corner Table" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--primary-burgundy); cursor: pointer;">
@@ -480,7 +480,7 @@
     <!-- Pierre Chareau Section -->
     <section class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
                 <div>
                     <h2 style="color: var(--primary-gold); font-size: 2.5rem; margin-bottom: 1rem;">Pierre Chareau</h2>
                     <div class="zigzag-pattern" style="width: 150px; margin-bottom: 2rem;"></div>
@@ -500,8 +500,8 @@
                     </div>
                 </div>
                 <div class="art-deco-card clickable-card" data-modal="maison-verre-modal">
-                    <!-- Image: 400x500px - Maison de Verre or Chareau design -->
-                    <img src="images/maison-de-verre.jpg" alt="Maison de Verre by Pierre Chareau" style="width: 100%; height: 500px; object-fit: cover; margin-bottom: 1rem; cursor: pointer;">
+                    <!-- Image: 400x400px - Maison de Verre or Chareau design -->
+                    <img src="images/maison-de-verre.jpg" alt="Maison de Verre by Pierre Chareau" style="width: 100%; height: 400px; object-fit: cover; margin-bottom: 1rem; cursor: pointer;">
                     <div style="text-align: center; padding: 1rem; background: linear-gradient(45deg, var(--primary-navy), var(--primary-gold)); color: var(--primary-light);">
                         <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">PIERRE CHAREAU</h3>
                         <p style="font-style: italic;">"Maison de Verre"</p>
@@ -658,7 +658,7 @@
                 <div class="art-deco-card clickable-card" data-modal="marble-stone-modal">
                     <!-- Image: 280x200px - Marble and stone -->
                     <img src="images/marble-stone.jpg" alt="Marble and Stone" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1rem; cursor: pointer;">
-                    <h3 style="color: var(--primary-burgundy); font-size: 1.3rem; margin-bottom: 1rem;">Natural Precious Stone</h3>
+                    <h3 style="color: var(--primary-burgundy); font-size: 1.3rem; margin-bottom: 1rem;">Natural Precious Stones</h3>
                     <p style="line-height: 1.7; margin-bottom: 1rem;">
                         Marble, granite, limestone with unique natural patterns and rich colors.
                     </p>
@@ -719,10 +719,10 @@
                 <h3 style="color: var(--primary-gold); margin-bottom: 2rem; font-size: 2rem;">Influence on Today</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
                     <div class="clickable-card" data-modal="luxury-interior-modal">
-                        <!-- Image: 250x200px - Luxury interior design -->
-                        <img src="images/luxury-interior-modern.jpg" alt="Modern Luxury Interior" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem; border: 2px solid var(--primary-gold); cursor: pointer;">
-                        <h4 style="color: var(--primary-gold); margin-bottom: 1rem;">Luxury Interior</h4>
-                        <p>High-end brands still apply Art Deco principles in luxurious interior design</p>
+                        <!-- Image: 250x200px - Luxury furniture design -->
+                        <img src="images/luxury-interior-modern.jpg" alt="Modern Luxury Furniture" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem; border: 2px solid var(--primary-gold); cursor: pointer;">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 1rem;">Luxury Furniture</h4>
+                        <p>High-end brands still apply Art Deco principles in luxurious furniture design</p>
                         <div class="click-overlay">
                             <span class="click-hint">Click to explore</span>
                         </div>
@@ -813,6 +813,47 @@
                     
                     <h4>Crafting Techniques:</h4>
                     <p>Ruhlmann worked with the most skilled craftsmen, using traditional marquetry techniques combined with modern technology. Each product was hand-finished with millimeter precision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruhlmann Workshop Modal -->
+    <div id="ruhlmann-workshop-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Ruhlmann's Workshop: Craftsmanship Excellence</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/ruhlmann-workshop.jpg" alt="Ruhlmann in his workshop" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>The Master's Workshop</h3>
+                    <p>Émile-Jacques Ruhlmann's workshop was a temple of craftsmanship where the finest furniture of the Art Deco era was created. Located in Paris, this atelier employed the most skilled artisans of the time.</p>
+                    
+                    <h4>Workshop Organization:</h4>
+                    <ul>
+                        <li><strong>Master craftsmen:</strong> 50+ specialists in different techniques</li>
+                        <li><strong>Departments:</strong> Wood preparation, marquetry, finishing, metalwork</li>
+                        <li><strong>Quality control:</strong> Multiple inspection stages</li>
+                        <li><strong>Materials storage:</strong> Climate-controlled exotic wood storage</li>
+                        <li><strong>Design studio:</strong> Where sketches became reality</li>
+                    </ul>
+                    
+                    <h4>Production Process:</h4>
+                    <ul>
+                        <li><strong>Design phase:</strong> Hand-drawn sketches and detailed plans</li>
+                        <li><strong>Material selection:</strong> Personal inspection by Ruhlmann</li>
+                        <li><strong>Rough construction:</strong> Basic framework assembly</li>
+                        <li><strong>Marquetry work:</strong> Intricate veneer application</li>
+                        <li><strong>Final finishing:</strong> Hand-polished to perfection</li>
+                    </ul>
+                    
+                    <h4>Workshop Philosophy:</h4>
+                    <p>Every piece that left Ruhlmann's workshop had to meet his exacting standards. No detail was too small, no material too expensive if it served the pursuit of perfection.</p>
                 </div>
             </div>
         </div>
@@ -927,6 +968,205 @@
                     
                     <h4>Influence on Art:</h4>
                     <p>Dunand proved that traditional Asian techniques could be successfully applied to Western decorative arts. He paved the way for cultural exchange in art and influenced many later craftsmen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruhlmann Table Modal -->
+    <div id="ruhlmann-table-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Ruhlmann Corner Table: Elegant Simplicity</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/ruhlmann-corner-table.jpg" alt="Ruhlmann Corner Table" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>The Iconic Corner Table</h3>
+                    <p>This corner table exemplifies Ruhlmann's design philosophy: simple yet sophisticated forms that showcase the beauty of premium materials and expert craftsmanship.</p>
+                    
+                    <h4>Design Features:</h4>
+                    <ul>
+                        <li><strong>Ebony wood:</strong> Pure black African ebony for the structure</li>
+                        <li><strong>Silver inlay:</strong> Hand-applied silver decorative elements</li>
+                        <li><strong>Curved legs:</strong> Characteristic elliptical supports</li>
+                        <li><strong>Proportions:</strong> Golden ratio dimensions</li>
+                        <li><strong>Finish:</strong> Hand-polished to mirror gloss</li>
+                    </ul>
+                    
+                    <h4>Construction Details:</h4>
+                    <ul>
+                        <li><strong>Joinery:</strong> Traditional mortise and tenon</li>
+                        <li><strong>Top:</strong> Book-matched ebony veneer</li>
+                        <li><strong>Edge treatment:</strong> Hand-shaped bullnose profile</li>
+                        <li><strong>Hardware:</strong> Concealed construction fasteners</li>
+                    </ul>
+                    
+                    <h4>Historical Context:</h4>
+                    <p>Created in 1925, this table was featured in the Paris Exposition and became one of Ruhlmann's most copied designs. Original pieces now sell for over $500,000.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruhlmann Cabinet Modal -->
+    <div id="ruhlmann-cabinet-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Ruhlmann Amboyna Cabinet: Ultimate Luxury</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/ruhlmann-cabinet.jpg" alt="Ruhlmann Amboyna Cabinet" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>The Legendary Amboyna Cabinet</h3>
+                    <p>Considered the pinnacle of Art Deco cabinetmaking, this piece uses the world's most expensive wood combined with precious metal details.</p>
+                    
+                    <h4>Materials Used:</h4>
+                    <ul>
+                        <li><strong>Amboyna burl:</strong> Rare wood from Indonesia's Molucca Islands</li>
+                        <li><strong>Ivory details:</strong> Carefully carved decorative elements</li>
+                        <li><strong>Silver hardware:</strong> Custom-made handles and hinges</li>
+                        <li><strong>Silk lining:</strong> Interior compartments lined in finest silk</li>
+                    </ul>
+                    
+                    <h4>Unique Features:</h4>
+                    <ul>
+                        <li><strong>Grain pattern:</strong> Each cabinet has unique burl figure</li>
+                        <li><strong>Secret compartments:</strong> Hidden storage areas</li>
+                        <li><strong>Adjustable shelves:</strong> Interior customization</li>
+                        <li><strong>Soft-close doors:</strong> Precision-fitted mechanisms</li>
+                    </ul>
+                    
+                    <h4>Investment Value:</h4>
+                    <p>Originally priced at 40,000 francs in 1925 (equivalent to $250,000 today), these cabinets now command over $2 million at auction due to their rarity and craftsmanship.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruhlmann Chair Modal -->
+    <div id="ruhlmann-chair-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Ruhlmann Bergère Chair: Comfort & Elegance</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/ruhlmann-chair.jpg" alt="Ruhlmann Bergère Chair" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>The Perfect Bergère</h3>
+                    <p>This armchair represents the ideal fusion of comfort and sophistication, featuring Ruhlmann's signature attention to both form and function.</p>
+                    
+                    <h4>Design Elements:</h4>
+                    <ul>
+                        <li><strong>Frame material:</strong> Solid walnut with ebony accents</li>
+                        <li><strong>Upholstery:</strong> Hand-selected Morocco leather</li>
+                        <li><strong>Cushioning:</strong> Horsehair and down filling</li>
+                        <li><strong>Stitching:</strong> Hand-sewn with silk thread</li>
+                        <li><strong>Nailheads:</strong> Brass decorative trim</li>
+                    </ul>
+                    
+                    <h4>Ergonomic Features:</h4>
+                    <ul>
+                        <li><strong>Seat height:</strong> Precisely calculated for comfort</li>
+                        <li><strong>Arm rest curve:</strong> Anatomically designed</li>
+                        <li><strong>Back support:</strong> Gentle lumbar curve</li>
+                        <li><strong>Seat depth:</strong> Optimized for extended sitting</li>
+                    </ul>
+                    
+                    <h4>Craftsmanship Details:</h4>
+                    <p>Each chair required 200+ hours of skilled labor, from frame construction through final upholstery. The precise spring system was revolutionary for its time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maison de Verre Modal -->
+    <div id="maison-verre-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Maison de Verre: Glass House Masterpiece</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/maison-de-verre.jpg" alt="Maison de Verre by Pierre Chareau" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>Revolutionary Architecture</h3>
+                    <p>Built between 1928-1932, Maison de Verre represents one of the most important examples of early modern architecture, pioneering the use of industrial materials in residential design.</p>
+                    
+                    <h4>Architectural Innovation:</h4>
+                    <ul>
+                        <li><strong>Glass block facade:</strong> 13,000 Nevada glass blocks</li>
+                        <li><strong>Steel frame structure:</strong> Prefabricated steel construction</li>
+                        <li><strong>Flexible spaces:</strong> Movable partitions throughout</li>
+                        <li><strong>Mechanical systems:</strong> Early air conditioning integration</li>
+                        <li><strong>Natural light:</strong> Optimized daylight penetration</li>
+                    </ul>
+                    
+                    <h4>Interior Features:</h4>
+                    <ul>
+                        <li><strong>Custom furniture:</strong> Built-in steel and leather pieces</li>
+                        <li><strong>Integrated lighting:</strong> Architectural lighting design</li>
+                        <li><strong>Storage solutions:</strong> Hidden and modular storage</li>
+                        <li><strong>Material palette:</strong> Glass, steel, leather, rubber</li>
+                    </ul>
+                    
+                    <h4>Historical Impact:</h4>
+                    <p>This house influenced generations of architects including Le Corbusier and Mies van der Rohe. It remains a private residence and architectural pilgrimage site.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dunand Lacquer Modal -->
+    <div id="dunand-lacquer-modal" class="detail-modal">
+        <div class="detail-modal-content">
+            <span class="detail-close">&times;</span>
+            <div class="detail-modal-header">
+                <h2>Dunand's Lacquer Mastery: Eastern Art in Paris</h2>
+                <div class="zigzag-pattern" style="width: 200px; margin: 1rem auto;"></div>
+            </div>
+            <div class="detail-modal-body">
+                <div class="modal-image-container">
+                    <img src="images/dunand-lacquer-work.jpg" alt="Jean Dunand Lacquer Work" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-content-scroll">
+                    <h3>Master of Lacquer Arts</h3>
+                    <p>Jean Dunand spent four years learning traditional Japanese lacquer techniques from master Seizo Sugawara, then adapted these methods to create uniquely Western Art Deco pieces.</p>
+                    
+                    <h4>Lacquer Process:</h4>
+                    <ul>
+                        <li><strong>Base preparation:</strong> Wood substrate sealed and smoothed</li>
+                        <li><strong>Foundation layers:</strong> 8-12 base coats of urushi</li>
+                        <li><strong>Decorative layers:</strong> Colored lacquers and metal powders</li>
+                        <li><strong>Polishing stages:</strong> Each layer hand-polished</li>
+                        <li><strong>Final coating:</strong> Protective clear lacquer finish</li>
+                    </ul>
+                    
+                    <h4>Signature Techniques:</h4>
+                    <ul>
+                        <li><strong>Eggshell inlay:</strong> Crushed eggshell for texture</li>
+                        <li><strong>Metal powder sprinkling:</strong> Gold and silver maki-e technique</li>
+                        <li><strong>Color gradations:</strong> Subtle color transitions</li>
+                        <li><strong>Raised relief:</strong> Three-dimensional surface effects</li>
+                    </ul>
+                    
+                    <h4>Cultural Bridge:</h4>
+                    <p>Dunand's work represented the first successful integration of traditional Asian crafts with European Art Deco aesthetics, creating a new artistic vocabulary.</p>
                 </div>
             </div>
         </div>
@@ -1585,71 +1825,71 @@
                     <h4>Premium Stone Types:</h4>
                     <ul>
                         <li><strong>Carrara Marble:</strong> From Italy, white with subtle grey veining</li>
-                        <li><strong>Nero Marquina:</strong> Black marble từ Spain với white veining</li>
-                        <li><strong>Onyx:</strong> Translucent stone với dramatic banding</li>
-                        <li><strong>Travertine:</strong> Limestone với natural pitting và texture</li>
-                        <li><strong>Granite:</strong> Igneous rock với speckled patterns</li>
+                        <li><strong>Nero Marquina:</strong> Black marble from Spain with white veining</li>
+                        <li><strong>Onyx:</strong> Translucent stone with dramatic banding</li>
+                        <li><strong>Travertine:</strong> Limestone with natural pitting and texture</li>
+                        <li><strong>Granite:</strong> Igneous rock with speckled patterns</li>
                     </ul>
                     
                     <h4>Geological Properties:</h4>
                     <ul>
                         <li><strong>Hardness:</strong> Marble 3-4 Mohs, Granite 6-7 Mohs</li>
-                        <li><strong>Density:</strong> 2.5-2.8 g/cm³ cho marble, 2.6-2.7 cho granite</li>
-                        <li><strong>Porosity:</strong> 0.1-2% tùy loại đá</li>
+                        <li><strong>Density:</strong> 2.5-2.8 g/cm³ for marble, 2.6-2.7 for granite</li>
+                        <li><strong>Porosity:</strong> 0.1-2% depending on stone type</li>
                         <li><strong>Compressive strength:</strong> 100-200 MPa</li>
                         <li><strong>Thermal conductivity:</strong> 2-4 W/mK, cool to touch</li>
                     </ul>
                     
                     <h4>Quarrying Process:</h4>
                     <ul>
-                        <li><strong>Site selection:</strong> Geological surveys cho quality assessment</li>
-                        <li><strong>Block extraction:</strong> Diamond wire cutting cho clean faces</li>
+                        <li><strong>Site selection:</strong> Geological surveys for quality assessment</li>
+                        <li><strong>Block extraction:</strong> Diamond wire cutting for clean faces</li>
                         <li><strong>Quality grading:</strong> A, B, C grades based on defects</li>
-                        <li><strong>Transportation:</strong> Special handling để avoid cracking</li>
+                        <li><strong>Transportation:</strong> Special handling to avoid cracking</li>
                         <li><strong>Storage:</strong> Climate-controlled warehouses</li>
                     </ul>
                     
                     <h4>Fabrication Techniques:</h4>
                     <ul>
-                        <li><strong>Sawing:</strong> Gang saws với diamond blades</li>
+                        <li><strong>Sawing:</strong> Gang saws with diamond blades</li>
                         <li><strong>Calibration:</strong> Thickness standardization ±1mm</li>
                         <li><strong>Surface finishing:</strong> Polished, honed, brushed, flamed</li>
                         <li><strong>Edge profiling:</strong> Bullnose, beveled, ogee profiles</li>
-                        <li><strong>Drilling:</strong> Core bits cho faucet holes</li>
+                        <li><strong>Drilling:</strong> Core bits for faucet holes</li>
                     </ul>
                     
                     <h4>Surface Finishes:</h4>
                     <ul>
                         <li><strong>Polished:</strong> 3000 grit, mirror-like finish</li>
-                        <li><strong>Honed:</strong> 400 grit, matte với subtle sheen</li>
-                        <li><strong>Leathered:</strong> Textured surface cho grip</li>
-                        <li><strong>Bush-hammered:</strong> Rough texture cho slip resistance</li>
+                        <li><strong>Honed:</strong> 400 grit, matte with subtle sheen</li>
+                        <li><strong>Leathered:</strong> Textured surface for grip</li>
+                        <li><strong>Bush-hammered:</strong> Rough texture for slip resistance</li>
                         <li><strong>Sandblasted:</strong> Uniform matte finish</li>
                     </ul>
                     
                     <h4>Art Deco Applications:</h4>
                     <ul>
-                        <li><strong>Flooring:</strong> Book-matched slabs với geometric patterns</li>
-                        <li><strong>Wall cladding:</strong> Feature walls với dramatic veining</li>
-                        <li><strong>Countertops:</strong> Kitchen và bathroom surfaces</li>
+                        <li><strong>Flooring:</strong> Book-matched slabs with geometric patterns</li>
+                        <li><strong>Wall cladding:</strong> Feature walls with dramatic veining</li>
+                        <li><strong>Countertops:</strong> Kitchen and bathroom surfaces</li>
                         <li><strong>Furniture:</strong> Table tops, pedestals, decorative objects</li>
                         <li><strong>Architectural details:</strong> Columns, moldings, trim work</li>
                     </ul>
                     
                     <h4>Installation Methods:</h4>
                     <ul>
-                        <li><strong>Mechanical anchoring:</strong> Stainless steel clips và anchors</li>
-                        <li><strong>Adhesive mounting:</strong> Structural adhesives cho thin slabs</li>
-                        <li><strong>Mortar bed:</strong> Traditional setting cho thick stones</li>
-                        <li><strong>Dry mounting:</strong> Clip systems cho curtain walls</li>
-                        <li><strong>Pin mounting:</strong> Structural pins cho heavy pieces</li>
+                        <li><strong>Mechanical anchoring:</strong> Stainless steel clips and anchors</li>
+                        <li><strong>Adhesive mounting:</strong> Structural adhesives for thin slabs</li>
+                        <li><strong>Mortar bed:</strong> Traditional setting for thick stones</li>
+                        <li><strong>Dry mounting:</strong> Clip systems for curtain walls</li>
+                        <li><strong>Pin mounting:</strong> Structural pins for heavy pieces</li>
                     </ul>
                     
                     <h4>Sealing & Protection:</h4>
                     <ul>
                         <li><strong>Penetrating sealers:</strong> Silane/siloxane based</li>
                         <li><strong>Topical sealers:</strong> Acrylic or urethane coatings</li>
-                        <li><strong>Impregnating sealers:</strong> Deep penetration cho porous stones</li>
+                        <li><strong>Impregnating sealers:</strong> Deep penetration for porous stones</li>
                         <li><strong>Color enhancers:</strong> Wet-look finishes</li>
                         <li><strong>Anti-graffiti coatings:</strong> Sacrificial films</li>
                     </ul>
@@ -1666,7 +1906,7 @@
                     <h4>Maintenance Procedures:</h4>
                     <ul>
                         <li><strong>Daily cleaning:</strong> pH-neutral cleaners only</li>
-                        <li><strong>Stain removal:</strong> Poultice treatments cho organic stains</li>
+                        <li><strong>Stain removal:</strong> Poultice treatments for organic stains</li>
                         <li><strong>Re-polishing:</strong> Diamond polishing pads</li>
                         <li><strong>Crack repair:</strong> Color-matched epoxy fills</li>
                         <li><strong>Re-sealing:</strong> Annual or bi-annual applications</li>
@@ -1783,7 +2023,7 @@
                     <ul>
                         <li><strong>Western substrates:</strong> Applied to furniture woods</li>
                         <li><strong>Geometric patterns:</strong> Art Deco motifs incorporated</li>
-                        <li><strong>Metallic accents:</strong> Gold và silver powders</li>
+                        <li><strong>Metallic accents:</strong> Gold and silver powders</li>
                         <li><strong>Color combinations:</strong> Black-red-gold schemes</li>
                         <li><strong>Modern shapes:</strong> Applied to contemporary forms</li>
                     </ul>
@@ -1801,18 +2041,18 @@
                     <ul>
                         <li><strong>Luxury automotive:</strong> Interior trim pieces</li>
                         <li><strong>Musical instruments:</strong> Piano finishes, guitar work</li>
-                        <li><strong>Jewelry:</strong> Watch faces và luxury accessories</li>
-                        <li><strong>Architecture:</strong> Decorative panels và feature walls</li>
-                        <li><strong>Art objects:</strong> Sculptures và decorative pieces</li>
+                        <li><strong>Jewelry:</strong> Watch faces and luxury accessories</li>
+                        <li><strong>Architecture:</strong> Decorative panels and feature walls</li>
+                        <li><strong>Art objects:</strong> Sculptures and decorative pieces</li>
                     </ul>
                     
                     <h4>Maintenance Requirements:</h4>
                     <ul>
                         <li><strong>Cleaning:</strong> Soft dry cloth only</li>
-                        <li><strong>Environmental:</strong> Stable temperature và humidity</li>
+                        <li><strong>Environmental:</strong> Stable temperature and humidity</li>
                         <li><strong>Handling:</strong> Avoid sharp impacts</li>
                         <li><strong>Restoration:</strong> Only by trained specialists</li>
-                        <li><strong>Longevity:</strong> Can last 500+ years với proper care</li>
+                        <li><strong>Longevity:</strong> Can last 500+ years with proper care</li>
                     </ul>
                     
                     <h4>Economic Aspects:</h4>
@@ -1840,9 +2080,9 @@
                     
                     <h4>Exotic Leather Types:</h4>
                     <ul>
-                        <li><strong>Shagreen (da cá mập):</strong> Từ stingray, texture granular đặc biệt</li>
-                        <li><strong>Crocodile skin:</strong> Từ Nile crocodile, scale patterns dramatic</li>
-                        <li><strong>Ostrich leather:</strong> Follicle patterns từ South African ostriches</li>
+                        <li><strong>Shagreen (shark skin):</strong> From stingray, special granular texture</li>
+                        <li><strong>Crocodile skin:</strong> From Nile crocodile, dramatic scale patterns</li>
+                        <li><strong>Ostrich leather:</strong> Follicle patterns from South African ostriches</li>
                         <li><strong>Snake skin:</strong> Python and cobra with scale patterns</li>
                         <li><strong>Calfskin:</strong> Young cattle, extremely fine grain</li>
                     </ul>
@@ -1862,16 +2102,16 @@
                         <li><strong>Gilding:</strong> Gold leaf application over sized surfaces</li>
                         <li><strong>Lacquering:</strong> High-gloss protective coatings</li>
                         <li><strong>Waxing:</strong> Natural beeswax finishes</li>
-                        <li><strong>Dyeing:</strong> Aniline dyes cho vibrant colors</li>
+                        <li><strong>Dyeing:</strong> Aniline dyes for vibrant colors</li>
                     </ul>
                     
                     <h4>Shagreen Preparation:</h4>
                     <ul>
                         <li><strong>Source material:</strong> Stingray skin from Southeast Asia</li>
-                        <li><strong>Cleaning process:</strong> Remove natural oils và proteins</li>
+                        <li><strong>Cleaning process:</strong> Remove natural oils and proteins</li>
                         <li><strong>Smoothing:</strong> Sand down natural bumps</li>
                         <li><strong>Dyeing:</strong> Deep penetration colors</li>
-                        <li><strong>Mounting:</strong> Glued to wood substrate với precision</li>
+                        <li><strong>Mounting:</strong> Glued to wood substrate with precision</li>
                     </ul>
                     
                     <h4>Application Techniques:</h4>
@@ -1880,7 +2120,7 @@
                         <li><strong>Edge finishing:</strong> Hand-stitched or glued seams</li>
                         <li><strong>Padding:</strong> Horsehair or cotton batting</li>
                         <li><strong>Tacking:</strong> Brass nails in geometric patterns</li>
-                        <li><strong>Welting:</strong> Piped edges cho professional finish</li>
+                        <li><strong>Welting:</strong> Piped edges for professional finish</li>
                     </ul>
                     
                     <h4>Furniture Applications:</h4>
@@ -1895,7 +2135,7 @@
                     <h4>Color Palettes:</h4>
                     <ul>
                         <li><strong>Classic brown:</strong> Cognac, tobacco, chocolate shades</li>
-                        <li><strong>Black:</strong> Deep black với subtle sheen</li>
+                        <li><strong>Black:</strong> Deep black with subtle sheen</li>
                         <li><strong>Red:</strong> Burgundy, oxblood, crimson</li>
                         <li><strong>Green:</strong> Forest, olive, racing green</li>
                         <li><strong>Metallics:</strong> Gold, silver leaf treatments</li>
@@ -1921,10 +2161,10 @@
                     
                     <h4>Historical Sources:</h4>
                     <ul>
-                        <li><strong>Hermès:</strong> Provided luxury leathers cho furniture makers</li>
+                        <li><strong>Hermès:</strong> Provided luxury leathers for furniture makers</li>
                         <li><strong>Tanners of Morocco:</strong> Traditional shagreen suppliers</li>
-                        <li><strong>English tanneries:</strong> Finest calfskin và pigskin</li>
-                        <li><strong>American suppliers:</strong> Buffalo và cattle hides</li>
+                        <li><strong>English tanneries:</strong> Finest calfskin and pigskin</li>
+                        <li><strong>American suppliers:</strong> Buffalo and cattle hides</li>
                         <li><strong>Italian craftsmen:</strong> Specialty decorative treatments</li>
                     </ul>
                     
@@ -1938,7 +2178,7 @@
                     </ul>
                     
                     <h4>Cost Factors:</h4>
-                    <p>Genuine shagreen: $200-500/sq ft. Crocodile: $300-800/sq ft. Fine calfskin: $50-150/sq ft. Labor-intensive applications add 200-400% to material costs. Vintage pieces với provenance command premium prices.</p>
+                    <p>Genuine shagreen: $200-500/sq ft. Crocodile: $300-800/sq ft. Fine calfskin: $50-150/sq ft. Labor-intensive applications add 200-400% to material costs. Vintage pieces with provenance command premium prices.</p>
                     
                     <h4>Sustainability Concerns:</h4>
                     <ul>
@@ -1973,16 +2213,16 @@
                     <ul>
                         <li><strong>Veneer preparation:</strong> Woods sliced to 0.6-0.8mm thickness</li>
                         <li><strong>Pattern transfer:</strong> Templates cut from paper or thin wood</li>
-                        <li><strong>Cutting technique:</strong> Fretsaw với extremely fine blades</li>
-                        <li><strong>Assembly method:</strong> Precise fitting với minimal gaps</li>
+                        <li><strong>Cutting technique:</strong> Fretsaw with extremely fine blades</li>
+                        <li><strong>Assembly method:</strong> Precise fitting with minimal gaps</li>
                         <li><strong>Adhesive application:</strong> Hide glue or modern PVA</li>
                     </ul>
                     
                     <h4>Inlay Work (Carving):</h4>
                     <ul>
-                        <li><strong>Routing precision:</strong> Hand-carved recesses với exact depth</li>
+                        <li><strong>Routing precision:</strong> Hand-carved recesses with exact depth</li>
                         <li><strong>Material selection:</strong> Contrasting woods, metals, ivory</li>
-                        <li><strong>Fitting process:</strong> Trial fitting cho perfect match</li>
+                        <li><strong>Fitting process:</strong> Trial fitting for perfect match</li>
                         <li><strong>Securing methods:</strong> Pressure fitting or adhesive bonding</li>
                         <li><strong>Flush finishing:</strong> Sanding to achieve smooth surface</li>
                     </ul>
@@ -1991,23 +2231,23 @@
                     <ul>
                         <li><strong>Wire inlay:</strong> Brass or silver wire pressed into grooves</li>
                         <li><strong>Sheet inlay:</strong> Thin metal sheets fitted into recesses</li>
-                        <li><strong>Powder inlay:</strong> Metal powder mixed với adhesive</li>
+                        <li><strong>Powder inlay:</strong> Metal powder mixed with adhesive</li>
                         <li><strong>Damascening:</strong> Pattern-welded metal surfaces</li>
                         <li><strong>Niello work:</strong> Black metal alloy decorative technique</li>
                     </ul>
                     
                     <h4>Joinery Methods:</h4>
                     <ul>
-                        <li><strong>Dovetail joints:</strong> Hand-cut với precise angles</li>
+                        <li><strong>Dovetail joints:</strong> Hand-cut with precise angles</li>
                         <li><strong>Mortise and tenon:</strong> Traditional strong connections</li>
-                        <li><strong>Dowel joints:</strong> Reinforced với wooden pins</li>
-                        <li><strong>Spline joints:</strong> Edge-glued panels với reinforcement</li>
-                        <li><strong>Laminated construction:</strong> Multiple layers cho strength</li>
+                        <li><strong>Dowel joints:</strong> Reinforced with wooden pins</li>
+                        <li><strong>Spline joints:</strong> Edge-glued panels with reinforcement</li>
+                        <li><strong>Laminated construction:</strong> Multiple layers for strength</li>
                     </ul>
                     
                     <h4>Carving Techniques:</h4>
                     <ul>
-                        <li><strong>Relief carving:</strong> Raised designs từ background</li>
+                        <li><strong>Relief carving:</strong> Raised designs from background</li>
                         <li><strong>Incised carving:</strong> Lines cut into surface</li>
                         <li><strong>Chip carving:</strong> Geometric patterns by knife work</li>
                         <li><strong>Sculptural carving:</strong> Three-dimensional forms</li>
@@ -2016,8 +2256,8 @@
                     
                     <h4>Geometric Pattern Creation:</h4>
                     <ul>
-                        <li><strong>Compass work:</strong> Precise circular và arc elements</li>
-                        <li><strong>Ruler construction:</strong> Straight lines và angular patterns</li>
+                        <li><strong>Compass work:</strong> Precise circular and arc elements</li>
+                        <li><strong>Ruler construction:</strong> Straight lines and angular patterns</li>
                         <li><strong>Template systems:</strong> Repeatable pattern elements</li>
                         <li><strong>Mathematical ratios:</strong> Golden ratio applications</li>
                         <li><strong>Modular design:</strong> Scalable pattern systems</li>
@@ -2026,18 +2266,18 @@
                     <h4>Surface Preparation:</h4>
                     <ul>
                         <li><strong>Hand sanding:</strong> Progressive grits 120-400</li>
-                        <li><strong>Scraping:</strong> Cabinet scrapers cho glass-smooth finish</li>
+                        <li><strong>Scraping:</strong> Cabinet scrapers for glass-smooth finish</li>
                         <li><strong>Grain raising:</strong> Water treatment before final sanding</li>
-                        <li><strong>Dust removal:</strong> Tack cloths và compressed air</li>
-                        <li><strong>Final inspection:</strong> Raking light check cho defects</li>
+                        <li><strong>Dust removal:</strong> Tack cloths and compressed air</li>
+                        <li><strong>Final inspection:</strong> Raking light check for defects</li>
                     </ul>
                     
                     <h4>Finishing Applications:</h4>
                     <ul>
-                        <li><strong>French polishing:</strong> Shellac applied với rubber pad</li>
+                        <li><strong>French polishing:</strong> Shellac applied with rubber pad</li>
                         <li><strong>Lacquer spraying:</strong> Multiple thin coats</li>
-                        <li><strong>Oil finishing:</strong> Penetrating oils cho natural look</li>
-                        <li><strong>Wax applications:</strong> Paste wax cho soft sheen</li>
+                        <li><strong>Oil finishing:</strong> Penetrating oils for natural look</li>
+                        <li><strong>Wax applications:</strong> Paste wax for soft sheen</li>
                         <li><strong>Modern polyurethanes:</strong> Durable clear coatings</li>
                     </ul>
                     
@@ -2045,16 +2285,16 @@
                     <ul>
                         <li><strong>Dimensional accuracy:</strong> ±1mm tolerance standards</li>
                         <li><strong>Surface quality:</strong> <2 micron Ra measurements</li>
-                        <li><strong>Joint strength:</strong> Load testing cho structural integrity</li>
-                        <li><strong>Finish durability:</strong> Abrasion và chemical resistance</li>
-                        <li><strong>Visual inspection:</strong> Color matching và pattern alignment</li>
+                        <li><strong>Joint strength:</strong> Load testing for structural integrity</li>
+                        <li><strong>Finish durability:</strong> Abrasion and chemical resistance</li>
+                        <li><strong>Visual inspection:</strong> Color matching and pattern alignment</li>
                     </ul>
                     
                     <h4>Tool Requirements:</h4>
                     <ul>
-                        <li><strong>Hand planes:</strong> Smoothing, jack, và specialty planes</li>
-                        <li><strong>Chisels:</strong> Full range từ 3mm to 50mm widths</li>
-                        <li><strong>Saws:</strong> Dovetail, tenon, fret, và veneer saws</li>
+                        <li><strong>Hand planes:</strong> Smoothing, jack, and specialty planes</li>
+                        <li><strong>Chisels:</strong> Full range from 3mm to 50mm widths</li>
+                        <li><strong>Saws:</strong> Dovetail, tenon, fret, and veneer saws</li>
                         <li><strong>Measuring tools:</strong> Precision rules, squares, gauges</li>
                         <li><strong>Sharpening equipment:</strong> Stones, strops, guides</li>
                     </ul>
@@ -2105,10 +2345,10 @@
                     
                     <h4>Leading Luxury Brands:</h4>
                     <ul>
-                        <li><strong>Ralph Lauren Home:</strong> Classic American luxury với Art Deco influences</li>
-                        <li><strong>Hermès Maison:</strong> French elegance với geometric patterns</li>
+                        <li><strong>Ralph Lauren Home:</strong> Classic American luxury with Art Deco influences</li>
+                        <li><strong>Hermès Maison:</strong> French elegance with geometric patterns</li>
                         <li><strong>Armani Casa:</strong> Italian minimalism meets Art Deco sophistication</li>
-                        <li><strong>Fendi Casa:</strong> Bold patterns và luxury materials</li>
+                        <li><strong>Fendi Casa:</strong> Bold patterns and luxury materials</li>
                         <li><strong>Bentley Home:</strong> Automotive luxury translated to interiors</li>
                     </ul>
                     
@@ -2118,13 +2358,13 @@
                         <li><strong>Metallic accents:</strong> Brass, chrome, gold finishes</li>
                         <li><strong>Rich materials:</strong> Marble, exotic woods, fine leather</li>
                         <li><strong>Bold colors:</strong> Black-gold-white schemes</li>
-                        <li><strong>Streamlined forms:</strong> Clean lines với decorative elements</li>
+                        <li><strong>Streamlined forms:</strong> Clean lines with decorative elements</li>
                     </ul>
                     
                     <h4>Contemporary Applications:</h4>
                     <ul>
-                        <li><strong>Lighting design:</strong> Sculptural chandeliers với geometric forms</li>
-                        <li><strong>Furniture pieces:</strong> Statement chairs, tables với Art Deco details</li>
+                        <li><strong>Lighting design:</strong> Sculptural chandeliers with geometric forms</li>
+                        <li><strong>Furniture pieces:</strong> Statement chairs, tables with Art Deco details</li>
                         <li><strong>Wall treatments:</strong> Geometric wallpapers, metallic accents</li>
                         <li><strong>Flooring:</strong> Parquet patterns, marble inlays</li>
                         <li><strong>Accessories:</strong> Mirrors, vases, decorative objects</li>
@@ -2132,16 +2372,16 @@
                     
                     <h4>High-End Projects:</h4>
                     <ul>
-                        <li><strong>432 Park Avenue NYC:</strong> $95M penthouse với Art Deco inspired interiors</li>
+                        <li><strong>432 Park Avenue NYC:</strong> $95M penthouse with Art Deco inspired interiors</li>
                         <li><strong>One Hyde Park London:</strong> $240M apartment featuring custom Art Deco elements</li>
-                        <li><strong>Tour Odéon Monaco:</strong> Sky penthouse với bespoke Art Deco design</li>
+                        <li><strong>Tour Odéon Monaco:</strong> Sky penthouse with bespoke Art Deco design</li>
                         <li><strong>The Residences at Mandarin Oriental:</strong> Global luxury residential projects</li>
                         <li><strong>St. Regis Residences:</strong> Signature Art Deco styling worldwide</li>
                     </ul>
                     
                     <h4>Design Principles Applied:</h4>
                     <ul>
-                        <li><strong>Symmetry:</strong> Balanced compositions với central focal points</li>
+                        <li><strong>Symmetry:</strong> Balanced compositions with central focal points</li>
                         <li><strong>Layered lighting:</strong> Ambient, task, accent lighting systems</li>
                         <li><strong>Textural contrast:</strong> Smooth vs. textured surfaces</li>
                         <li><strong>Scale relationships:</strong> Proportional harmony throughout spaces</li>
@@ -2159,7 +2399,7 @@
                     
                     <h4>Custom Manufacturing:</h4>
                     <ul>
-                        <li><strong>Bespoke furniture:</strong> One-off pieces cho specific projects</li>
+                        <li><strong>Bespoke furniture:</strong> One-off pieces for specific projects</li>
                         <li><strong>Artisan collaboration:</strong> Master craftsmen creating unique elements</li>
                         <li><strong>Material sourcing:</strong> Rare woods, stones, metals</li>
                         <li><strong>Prototype development:</strong> Multiple iterations to perfection</li>
@@ -2169,15 +2409,15 @@
                     <h4>Interior Design Process:</h4>
                     <ul>
                         <li><strong>Concept development:</strong> 3-6 months design phase</li>
-                        <li><strong>Material selection:</strong> Global sourcing của finest materials</li>
+                        <li><strong>Material selection:</strong> Global sourcing of finest materials</li>
                         <li><strong>Custom fabrication:</strong> 12-18 months production time</li>
-                        <li><strong>Installation coordination:</strong> White-glove delivery và setup</li>
-                        <li><strong>Final styling:</strong> Accessories và art placement</li>
+                        <li><strong>Installation coordination:</strong> White-glove delivery and setup</li>
+                        <li><strong>Final styling:</strong> Accessories and art placement</li>
                     </ul>
                     
                     <h4>Investment Values:</h4>
                     <ul>
-                        <li><strong>Project costs:</strong> $5,000-15,000/sq ft cho luxury spaces</li>
+                        <li><strong>Project costs:</strong> $5,000-15,000/sq ft for luxury spaces</li>
                         <li><strong>Custom pieces:</strong> $50,000-500,000 per major item</li>
                         <li><strong>Appreciation rates:</strong> 5-15% annually for quality pieces</li>
                         <li><strong>Resale values:</strong> Strong market for well-executed designs</li>
@@ -2212,7 +2452,7 @@
                     </ul>
                     
                     <h4>Future Trends:</h4>
-                    <p>Digital integration while maintaining classic aesthetics. Sustainable luxury materials. Global accessibility through virtual design consultations. Increased customization through advanced manufacturing. Art Deco-inspired smart homes combining tradition với cutting-edge technology.</p>
+                    <p>Digital integration while maintaining classic aesthetics. Sustainable luxury materials. Global accessibility through virtual design consultations. Increased customization through advanced manufacturing. Art Deco-inspired smart homes combining tradition with cutting-edge technology.</p>
                 </div>
             </div>
         </div>
@@ -2236,17 +2476,17 @@
                     
                     <h4>Iconic Art Deco Hotels:</h4>
                     <ul>
-                        <li><strong>The Carlyle, NYC:</strong> Upper East Side landmark từ 1930</li>
+                        <li><strong>The Carlyle, NYC:</strong> Upper East Side landmark from 1930</li>
                         <li><strong>Claridge's, London:</strong> Art Deco renovation by Thierry Despont</li>
-                        <li><strong>Hotel Martinez, Cannes:</strong> Riviera glamour với Art Deco styling</li>
+                        <li><strong>Hotel Martinez, Cannes:</strong> Riviera glamour with Art Deco styling</li>
                         <li><strong>The Savoy, London:</strong> $340M renovation honoring Art Deco heritage</li>
-                        <li><strong>Park Hyatt Tokyo:</strong> Modern interpretation của Art Deco principles</li>
+                        <li><strong>Park Hyatt Tokyo:</strong> Modern interpretation of Art Deco principles</li>
                     </ul>
                     
                     <h4>Contemporary Art Deco Hotels:</h4>
                     <ul>
-                        <li><strong>1 Hotels Brooklyn Bridge:</strong> Sustainable luxury với Art Deco touches</li>
-                        <li><strong>The Ritz-Carlton, Hong Kong:</strong> Sky-high luxury với geometric elements</li>
+                        <li><strong>1 Hotels Brooklyn Bridge:</strong> Sustainable luxury with Art Deco touches</li>
+                        <li><strong>The Ritz-Carlton, Hong Kong:</strong> Sky-high luxury with geometric elements</li>
                         <li><strong>Four Seasons George V, Paris:</strong> Classic French elegance</li>
                         <li><strong>Aman Tokyo:</strong> Japanese minimalism meets Art Deco</li>
                         <li><strong>Edition Hotels:</strong> Ian Schrager's modern Art Deco interpretation</li>
@@ -2254,7 +2494,7 @@
                     
                     <h4>Design Elements Applied:</h4>
                     <ul>
-                        <li><strong>Lobby design:</strong> Grand entrances với soaring ceilings, geometric patterns</li>
+                        <li><strong>Lobby design:</strong> Grand entrances with soaring ceilings, geometric patterns</li>
                         <li><strong>Lighting schemes:</strong> Dramatic chandeliers, accent lighting, mood creation</li>
                         <li><strong>Furniture selection:</strong> Custom pieces inspired by 1920s-30s designs</li>
                         <li><strong>Materials palette:</strong> Marble, brass, exotic woods, fine textiles</li>
@@ -2267,16 +2507,16 @@
                         <li><strong>Bathroom luxury:</strong> Marble surfaces, Art Deco fixtures, dramatic lighting</li>
                         <li><strong>Technology integration:</strong> Hidden systems preserving aesthetic integrity</li>
                         <li><strong>Custom furniture:</strong> Bespoke pieces reflecting Art Deco sensibility</li>
-                        <li><strong>Artwork curation:</strong> Period pieces và contemporary interpretations</li>
+                        <li><strong>Artwork curation:</strong> Period pieces and contemporary interpretations</li>
                     </ul>
                     
                     <h4>Public Space Design:</h4>
                     <ul>
-                        <li><strong>Restaurants:</strong> Dining venues với theatrical Art Deco atmospheres</li>
-                        <li><strong>Bars & lounges:</strong> Speakeasy-inspired spaces với period details</li>
-                        <li><strong>Ballrooms:</strong> Grand event spaces với geometric ceiling treatments</li>
+                        <li><strong>Restaurants:</strong> Dining venues with theatrical Art Deco atmospheres</li>
+                        <li><strong>Bars & lounges:</strong> Speakeasy-inspired spaces with period details</li>
+                        <li><strong>Ballrooms:</strong> Grand event spaces with geometric ceiling treatments</li>
                         <li><strong>Spa facilities:</strong> Wellness areas incorporating Art Deco tranquility</li>
-                        <li><strong>Business centers:</strong> Professional spaces với elegant appointments</li>
+                        <li><strong>Business centers:</strong> Professional spaces with elegant appointments</li>
                     </ul>
                     
                     <h4>Project Investment Levels:</h4>
@@ -2303,7 +2543,7 @@
                         <li><strong>Architects:</strong> Structural modifications respecting heritage</li>
                         <li><strong>Lighting designers:</strong> Creating dramatic yet functional schemes</li>
                         <li><strong>Art consultants:</strong> Curating appropriate collections</li>
-                        <li><strong>Brand consultants:</strong> Ensuring consistency với hotel identity</li>
+                        <li><strong>Brand consultants:</strong> Ensuring consistency with hotel identity</li>
                     </ul>
                     
                     <h4>Technology Integration:</h4>
@@ -2312,13 +2552,13 @@
                         <li><strong>Mood lighting:</strong> Programmable systems enhancing ambiance</li>
                         <li><strong>Sound systems:</strong> High-quality audio without visual intrusion</li>
                         <li><strong>Climate control:</strong> Whisper-quiet systems maintaining comfort</li>
-                        <li><strong>Security systems:</strong> Discrete protection for guests và artwork</li>
+                        <li><strong>Security systems:</strong> Discrete protection for guests and artwork</li>
                     </ul>
                     
                     <h4>Operational Considerations:</h4>
                     <ul>
                         <li><strong>Maintenance requirements:</strong> Specialized care for luxury finishes</li>
-                        <li><strong>Staff training:</strong> Understanding design heritage và guest education</li>
+                        <li><strong>Staff training:</strong> Understanding design heritage and guest education</li>
                         <li><strong>Procurement systems:</strong> Sourcing replacement items for custom pieces</li>
                         <li><strong>Insurance coverage:</strong> Protecting valuable design investments</li>
                         <li><strong>Renovation planning:</strong> Phased approaches minimizing business disruption</li>
@@ -2338,12 +2578,12 @@
                         <li><strong>Asian markets:</strong> Incorporating local cultural elements</li>
                         <li><strong>European properties:</strong> Respecting historical building constraints</li>
                         <li><strong>American hotels:</strong> Bold interpretations with modern conveniences</li>
-                        <li><strong>Middle Eastern luxury:</strong> Opulent materials và grand scale</li>
+                        <li><strong>Middle Eastern luxury:</strong> Opulent materials and grand scale</li>
                         <li><strong>Emerging markets:</strong> Art Deco as symbol of sophistication</li>
                     </ul>
                     
                     <h4>Future Developments:</h4>
-                    <p>Sustainable luxury materials. Virtual reality guest previews. Personalized room customization. Integration with wellness trends. Adaptive spaces for changing guest needs. Art Deco aesthetic applied to boutique và lifestyle hotel segments.</p>
+                    <p>Sustainable luxury materials. Virtual reality guest previews. Personalized room customization. Integration with wellness trends. Adaptive spaces for changing guest needs. Art Deco aesthetic applied to boutique and lifestyle hotel segments.</p>
                 </div>
             </div>
         </div>
@@ -2367,18 +2607,18 @@
                     
                     <h4>Automotive Design:</h4>
                     <ul>
-                        <li><strong>Rolls-Royce:</strong> Phantom series với Art Deco inspired interiors</li>
+                        <li><strong>Rolls-Royce:</strong> Phantom series with Art Deco inspired interiors</li>
                         <li><strong>Bentley:</strong> Continental GT featuring geometric dashboard elements</li>
-                        <li><strong>Mercedes-Maybach:</strong> S-Class với luxury appointments</li>
+                        <li><strong>Mercedes-Maybach:</strong> S-Class with luxury appointments</li>
                         <li><strong>Aston Martin:</strong> DB series incorporating streamlined Art Deco forms</li>
-                        <li><strong>Bugatti:</strong> Chiron với sculptural body language</li>
+                        <li><strong>Bugatti:</strong> Chiron with sculptural body language</li>
                     </ul>
                     
                     <h4>Luxury Electronics:</h4>
                     <ul>
-                        <li><strong>Bang & Olufsen:</strong> Audio equipment với geometric aesthetic</li>
+                        <li><strong>Bang & Olufsen:</strong> Audio equipment with geometric aesthetic</li>
                         <li><strong>Apple:</strong> Product design philosophy influenced by Art Deco simplicity</li>
-                        <li><strong>Vertu:</strong> Luxury smartphones với precious material construction</li>
+                        <li><strong>Vertu:</strong> Luxury smartphones with precious material construction</li>
                         <li><strong>Leica:</strong> Camera designs honoring Art Deco industrial heritage</li>
                         <li><strong>Braun:</strong> Appliances featuring clean geometric forms</li>
                     </ul>
@@ -2386,33 +2626,33 @@
                     <h4>Timepiece Design:</h4>
                     <ul>
                         <li><strong>Cartier:</strong> Tank collection directly inspired by Art Deco</li>
-                        <li><strong>Jaeger-LeCoultre:</strong> Reverso với geometric case design</li>
+                        <li><strong>Jaeger-LeCoultre:</strong> Reverso with geometric case design</li>
                         <li><strong>Van Cleef & Arpels:</strong> Art Deco motifs in jewelry watches</li>
-                        <li><strong>Patek Philippe:</strong> Calatrava series với minimalist elegance</li>
+                        <li><strong>Patek Philippe:</strong> Calatrava series with minimalist elegance</li>
                         <li><strong>Omega:</strong> De Ville collection featuring period-inspired elements</li>
                     </ul>
                     
                     <h4>Home Appliances:</h4>
                     <ul>
-                        <li><strong>Smeg:</strong> Retro refrigerators với Art Deco styling cues</li>
+                        <li><strong>Smeg:</strong> Retro refrigerators with Art Deco styling cues</li>
                         <li><strong>KitchenAid:</strong> Stand mixers maintaining classic design language</li>
-                        <li><strong>Dyson:</strong> Vacuum cleaners với sculptural industrial design</li>
+                        <li><strong>Dyson:</strong> Vacuum cleaners with sculptural industrial design</li>
                         <li><strong>Nespresso:</strong> Coffee machines featuring streamlined forms</li>
-                        <li><strong>Sub-Zero:</strong> Built-in appliances với architectural integration</li>
+                        <li><strong>Sub-Zero:</strong> Built-in appliances with architectural integration</li>
                     </ul>
                     
                     <h4>Design Principles Applied:</h4>
                     <ul>
                         <li><strong>Geometric forms:</strong> Angular shapes, stepped profiles, linear elements</li>
-                        <li><strong>Streamlined aesthetics:</strong> Aerodynamic forms suggesting speed và efficiency</li>
+                        <li><strong>Streamlined aesthetics:</strong> Aerodynamic forms suggesting speed and efficiency</li>
                         <li><strong>Premium materials:</strong> Metal finishes, exotic materials, precision construction</li>
-                        <li><strong>Functional beauty:</strong> Form following function với artistic expression</li>
+                        <li><strong>Functional beauty:</strong> Form following function with artistic expression</li>
                         <li><strong>Attention to detail:</strong> Precise tolerances, quality finishes</li>
                     </ul>
                     
                     <h4>Manufacturing Techniques:</h4>
                     <ul>
-                        <li><strong>CNC machining:</strong> Precision manufacturing cho complex geometries</li>
+                        <li><strong>CNC machining:</strong> Precision manufacturing for complex geometries</li>
                         <li><strong>Advanced materials:</strong> Carbon fiber, titanium, ceramic applications</li>
                         <li><strong>Surface treatments:</strong> Anodizing, PVD coating, hand finishing</li>
                         <li><strong>Assembly methods:</strong> Precision fitting, minimal fasteners</li>
@@ -2421,26 +2661,26 @@
                     
                     <h4>Consumer Electronics:</h4>
                     <ul>
-                        <li><strong>Smartphones:</strong> Premium models với metal construction, geometric forms</li>
+                        <li><strong>Smartphones:</strong> Premium models with metal construction, geometric forms</li>
                         <li><strong>Laptops:</strong> Thin profiles, minimal aesthetics, quality materials</li>
-                        <li><strong>Audio equipment:</strong> Hi-fi components với architectural presence</li>
+                        <li><strong>Audio equipment:</strong> Hi-fi components with architectural presence</li>
                         <li><strong>Gaming hardware:</strong> Consoles featuring sophisticated industrial design</li>
                         <li><strong>Wearables:</strong> Smartwatches inspired by luxury timepiece tradition</li>
                     </ul>
                     
                     <h4>Furniture & Lighting:</h4>
                     <ul>
-                        <li><strong>Task lighting:</strong> Desk lamps với adjustable geometric elements</li>
+                        <li><strong>Task lighting:</strong> Desk lamps with adjustable geometric elements</li>
                         <li><strong>Seating design:</strong> Office chairs featuring ergonomic Art Deco forms</li>
-                        <li><strong>Storage solutions:</strong> Modular systems với clean geometric lines</li>
-                        <li><strong>Decorative lighting:</strong> Pendant và floor lamps với period inspiration</li>
-                        <li><strong>Workspace furniture:</strong> Desks combining function với aesthetic appeal</li>
+                        <li><strong>Storage solutions:</strong> Modular systems with clean geometric lines</li>
+                        <li><strong>Decorative lighting:</strong> Pendant and floor lamps with period inspiration</li>
+                        <li><strong>Workspace furniture:</strong> Desks combining function with aesthetic appeal</li>
                     </ul>
                     
                     <h4>Packaging Design:</h4>
                     <ul>
-                        <li><strong>Luxury goods:</strong> Boxes và containers reflecting product quality</li>
-                        <li><strong>Cosmetics:</strong> Geometric packaging với premium finishes</li>
+                        <li><strong>Luxury goods:</strong> Boxes and containers reflecting product quality</li>
+                        <li><strong>Cosmetics:</strong> Geometric packaging with premium finishes</li>
                         <li><strong>Spirits:</strong> Bottle designs featuring Art Deco motifs</li>
                         <li><strong>Technology:</strong> Product packaging reinforcing design language</li>
                         <li><strong>Jewelry:</strong> Presentation cases honoring Art Deco tradition</li>
@@ -2448,11 +2688,11 @@
                     
                     <h4>Market Positioning:</h4>
                     <ul>
-                        <li><strong>Premium positioning:</strong> Art Deco associations với luxury và quality</li>
+                        <li><strong>Premium positioning:</strong> Art Deco associations with luxury and quality</li>
                         <li><strong>Target demographics:</strong> Affluent, design-conscious consumers</li>
                         <li><strong>Price premiums:</strong> 20-50% above comparable products</li>
                         <li><strong>Brand differentiation:</strong> Unique positioning in competitive markets</li>
-                        <li><strong>Collector appeal:</strong> Limited editions với investment potential</li>
+                        <li><strong>Collector appeal:</strong> Limited editions with investment potential</li>
                     </ul>
                     
                     <h4>Design Process:</h4>
@@ -2466,17 +2706,17 @@
                     
                     <h4>Global Trends:</h4>
                     <ul>
-                        <li><strong>Sustainability:</strong> Eco-friendly materials với Art Deco aesthetics</li>
+                        <li><strong>Sustainability:</strong> Eco-friendly materials with Art Deco aesthetics</li>
                         <li><strong>Customization:</strong> Personalized products maintaining design coherence</li>
                         <li><strong>Smart integration:</strong> Technology hidden within elegant forms</li>
-                        <li><strong>Cultural adaptation:</strong> Regional interpretations của Art Deco principles</li>
-                        <li><strong>Vintage revival:</strong> Retro-inspired products với modern functionality</li>
+                        <li><strong>Cultural adaptation:</strong> Regional interpretations of Art Deco principles</li>
+                        <li><strong>Vintage revival:</strong> Retro-inspired products with modern functionality</li>
                     </ul>
                     
                     <h4>Investment Returns:</h4>
                     <ul>
-                        <li><strong>Development costs:</strong> Higher upfront investment in design và tooling</li>
-                        <li><strong>Manufacturing premiums:</strong> Quality materials và processes increase costs</li>
+                        <li><strong>Development costs:</strong> Higher upfront investment in design and tooling</li>
+                        <li><strong>Manufacturing premiums:</strong> Quality materials and processes increase costs</li>
                         <li><strong>Market performance:</strong> Strong sales to design-conscious segments</li>
                         <li><strong>Brand value:</strong> Design leadership enhancing overall brand equity</li>
                         <li><strong>Long-term appeal:</strong> Timeless designs maintaining relevance</li>
@@ -2721,6 +2961,7 @@
                     modal.style.display = 'flex';
                     modal.style.opacity = '0';
                     modal.style.transform = 'scale(0.9)';
+                    modal.style.transition = 'all 0.3s ease';
                     
                     // Animate in
                     setTimeout(() => {
@@ -2750,7 +2991,9 @@
         }
 
         // Initialize modal manager
-        const modalManager = new ModalManager();
+        document.addEventListener('DOMContentLoaded', () => {
+            const modalManager = new ModalManager();
+        });
     </script>
 </body>
 </html> 
